@@ -1,2 +1,4 @@
 Proyecto de MundosE - grupo 2102
-Instalacion de una instacia en AWS a traves de terraform
+Creacion de una instacia en AWS a traves de terraform
+configuraciones originales
+
