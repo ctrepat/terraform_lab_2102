@@ -1,6 +1,6 @@
 provider "aws" {
   version = "~> 2.7"
-  region  = "us-east-2"
+  region  = "us-east-1"
 }
 data "aws_vpc" "selected" {
   id = "${var.vpc_id}"
@@ -10,7 +10,7 @@ data "aws_subnet" "selected" {
   id = var.subnet_id
 }
 resource "aws_instance" "web" {
-  ami = "ami-077e31c4939f6a2f3"
+  ami = "ami-0ab4d1e9cf9a1215a"
   subnet_id = data.aws_subnet.selected.id
   instance_type = "t2.micro"
   security_groups = [aws_security_group.allow-ssh-all-test.id]
