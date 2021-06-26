@@ -1,1 +1,4 @@
-*.cfg
+config.cfg
+.terraform/providers/*
+.terraform.lock.hcl
+terraform.tfstate
